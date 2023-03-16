@@ -12,7 +12,8 @@ def binary_search(array, left, right, x) :
 
             return mid 
         
-        elif array[mid] > x : #Nếu phần tử nhỏ hơn mid, nó sẽ nằm ở phía bên trái của mảng (từ left cho đến mid - 1)
+        #Nếu phần tử nhỏ hơn mid, nó sẽ nằm ở phía bên trái của mảng (từ left cho đến mid - 1)
+        elif array[mid] > x : 
 
             return binary_search(array, left , mid - 1 , x)
         
